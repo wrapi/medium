@@ -1,0 +1,26 @@
+{
+	"user" : {
+		"method": "GET",
+		"path": "me"
+	},
+	"publications" : {
+		"method": "GET",
+		"path": "users/:userId/publications"
+	},
+	"contributors" : {
+		"method": "GET",
+		"path": "publications/:publicationId/contributors"
+	},
+	"post" : {
+		"method": "POST",
+		"path": "users/:authorId/posts"
+	},
+	"publication.post" : {
+		"method": "POST",
+		"path": "publications/:publicationId/posts"
+	},
+	"images" : {
+		"method": "POST",
+		"path": "images"
+	}
+}
