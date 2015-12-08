@@ -1,5 +1,6 @@
 'use strict';
 
+var util = require('util');
 var wrapi = require('wrapi');
 
 function mediumWrapi(apiVersion, accessToken) {
@@ -19,14 +20,13 @@ function mediumWrapi(apiVersion, accessToken) {
     }
   };
 
-  wrapi.call(this,
+  mediumWrapi.super_.call(this,
     'https://api.medium.com/' + apiVersion + '/',
     endpoints,
     opts
   );  
 };
 
-mediumWrapi.prototype = Object.create(wrapi.prototype);
-mediumWrapi.prototype.constructor = mediumWrapi;
+util.inherits(mediumWrapi, wrapi);
 
 module.exports = mediumWrapi;

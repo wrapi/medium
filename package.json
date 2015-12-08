@@ -32,7 +32,7 @@
     "url": "https://github.com/wrapi/medium/issues"
   },
   "dependencies": {
-    "wrapi": "^0.1.4"
+    "wrapi": "^0.1.5"
   },
   "engines": {
     "node": ">= 0.10.0"
